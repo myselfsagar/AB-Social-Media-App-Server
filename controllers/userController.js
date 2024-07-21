@@ -159,7 +159,6 @@ const deleteMyProfileController = async (req, res) => {
       httpOnly: true,
       secure: true,
     });
-    console.log("success");
     return res.send(success(200, "User deleted"));
   } catch (e) {
     return res.send(error(500, e.message));
